@@ -15,9 +15,9 @@ country=ID
 state=Indonesia
 locality=none
 organization=none
-organizationalunit=none
+organizationalunit=hidessh
 commonname=none
-email=adamspx17@gmail.com
+email=admin@hidessh.com
 
 # simple password minimal
 curl -sS https://raw.githubusercontent.com/bracoli/v4/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
@@ -241,15 +241,17 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-sleep 1
-echo -e "[ ${green}INFO$NC ] Settings banner"
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/bracoli/v4/main/issue.net"
+sleep 1cd
+# Custom Banner SSH
+echo "================  Banner ======================"
+wget -O /etc/issue.net "https://gitlab.com/hidessh/baru/-/raw/main/banner.conf"
 chmod +x /etc/issue.net
+
 echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
-sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+echo "DROPBEAR_BANNER="/etc/issue.net"" >> /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/bracoli/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+#wget https://raw.githubusercontent.com/bracoli/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -435,5 +437,14 @@ rm -f /root/cert.pem
 rm -f /root/ssh-vpn.sh
 rm -f /root/bbr.sh
 
+cd
+cd /usr/bin
+wget -O userdelexpired "https://gitlab.com/hidessh/baru/-/raw/main/userdelexpired.sh"
+chmod +x userdelexpired
+
+
+cd
+echo "0 17 * * * root clear-log" >> /etc/crontab
+echo "50 * * * * root userdelexpired" >> /etc/crontab
 # finihsing
 clear
