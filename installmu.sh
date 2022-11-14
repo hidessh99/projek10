@@ -32,34 +32,59 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 wget https://raw.githubusercontent.com/hidessh99/projek10/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-#Instal Xray
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          Install XRAY              $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
 
-#wget https://raw.githubusercontent.com/bracoli/v4/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-#wget https://raw.githubusercontent.com/bracoli/v4/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
-
-
+#Instal Xray
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green       Installer Xray               $NC"
+echo -e "$green Install Vmess,Trojan,Vless,Shadowsoks  $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+sleep 2
+clear
 wget https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hideinst-xrayv5.sh && chmod +x hideinst-xrayv5.sh && ./hideinst-xrayv5.sh
+sleep 2
+clear
+
+
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "$green          Install Websocket              $NC"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
 wget https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
 sleep 2
 clear
 
-#package tambahan
+#package tambahan addd aaccount
+
+#Vmess/v2ray
 wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-vray.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/del-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
+wget -q -O /usr/bin/renew-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+
+#Vless
 wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-vless.sh" && chmod +x /usr/bin/add-vless
+wget -q -O /usr/bin/renew-vless "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-vless.sh" && chmod +x /usr/bin/renew-vless
+wget -q -O /usr/bin/del-vless "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-vless.sh" && chmod +x /usr/bin/del-vless
+wget -q -O /usr/bin/cek-vless "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-vless
+
+#trojan
 wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-tr.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/del-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/del-tr.sh" && chmod +x /usr/bin/del-tr
+wget -q -O /usr/bin/renew-tr "https://raw.githubusercontent.com/bracoli/v4/main/xray/renew-tr.sh" && chmod +x /usr/bin/renew-tr
+wget -q -O /usr/bin/cek-tr "https://raw.githubusercontent.com/hidessh99/projek10/main/cek-user.sh" && chmod +x /usr/bin/cek-tr
+
+#shadowsoksks
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-ss.sh" && chmod +x /usr/bin/add-ssws
+
+
 wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
-wget -q -O /usr/bin/cek-ws "https://raw.githubusercontent.com/bracoli/v4/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
 wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-user
 wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/xray/hide-add-ss.sh" && chmod +x /usr/bin/add-ssws
-sleep 1
+
+sleep 2
 
 
 
