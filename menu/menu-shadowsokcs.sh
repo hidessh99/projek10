@@ -29,3 +29,4 @@ case $opt in
 5) clear ; cek-ssws ;;
 0) clear ; menu ;;
 x) exit ;;
+esac
