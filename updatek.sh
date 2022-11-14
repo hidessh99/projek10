@@ -122,7 +122,7 @@ echo -ne "[ ${green}INFO${NC} ] Check permission : "
 mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
-wget -q https://raw.githubusercontent.com/hidessh99/tuunnel-mx/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/bracoli/v4/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
     
