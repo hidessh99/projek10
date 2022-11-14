@@ -66,7 +66,9 @@ tram=$( free -m | awk 'NR==2 {print $2}' )
 uram=$( free -m | awk 'NR==2 {print $3}' )
 fram=$( free -m | awk 'NR==2 {print $4}' )
 clear 
-                                                                                        "
+echo -e "\e[33m                                                            \e[0m"
+echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "                                                                                         "
 echo -e "\e[33m Operating System     \e[0m:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[33m Total Amount Of RAM  \e[0m:  $tram MB"
 echo -e "\e[33m System Uptime        \e[0m:  $uptime "
@@ -79,7 +81,7 @@ echo -e "\e[33m ━━━━━━━━━━━━━━━━━━━━━�
 echo -e " [\e[36m•1\e[0m] SSH & OpenVPN Menu  [\e[36m•5\e[0m] SYSTEM Menu"
 echo -e " [\e[36m•2\e[0m] Vmess Menu          [\e[36m•6\e[0m] Status Service"
 echo -e " [\e[36m•3\e[0m] Vless Menu          [\e[36m•7\e[0m] Clear RAM Cache"
-echo -e " [\e[36m•4\e[0m] Trojan Go Menu      [\e[36m•8\e[0m] Trojan GFW Menu"                  
+echo -e " [\e[36m•4\e[0m] Trojan Go Menu      [\e[36m•8\e[0m] Shadowsocks Menu"                  
 echo -e   ""
 echo -e   " Press x or [ Ctrl+C ] • To-Exit-Script"
 echo -e   ""
@@ -94,6 +96,5 @@ case $opt in
 5) clear ; menu-set ;;
 6) clear ; running ;;
 7) clear ; clearcache ;;
-8) clear ; menu-trojan ;;
+8) clear ; menu-shadowsokcs ;;
 x) exit ;;
-esac
