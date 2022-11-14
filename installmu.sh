@@ -171,6 +171,19 @@ echo "" | tee -a log-install.txt
 rm /root/setup.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
+
+cd
+rm -rf updatek.sh
+rm -rf dns-cf.sh
+rm -rf update.sh
+rm -rf dns-cf.sh*
+rm -rf update.sh*
+rm -rf updatek.sh*
+rm -rf hideinst-xrayv5.sh
+rm -rf installmu.sh
+rm -rf hideinst-xrayv5.sh*
+rm -rf installmu.sh*
+
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
 "
