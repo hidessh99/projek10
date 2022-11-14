@@ -173,16 +173,20 @@ rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 
 cd
+mkdir /var/lib/scrz-prem/
+touch /var/lib/scrz-prem/ipvps.conf
+
+cd
 rm -rf updatek.sh
 rm -rf dns-cf.sh
 rm -rf update.sh
-rm -rf dns-cf.sh*
-rm -rf update.sh*
-rm -rf updatek.sh*
+rm -rf dns-cf.sh.*
+rm -rf update.sh.*
+rm -rf updatek.sh.*
 rm -rf hideinst-xrayv5.sh
 rm -rf installmu.sh
-rm -rf hideinst-xrayv5.sh*
-rm -rf installmu.sh*
+rm -rf hideinst-xrayv5.sh.*
+rm -rf installmu.sh.*
 
 secs_to_human "$(($(date +%s) - ${start}))" | tee -a log-install.txt
 echo -e "
