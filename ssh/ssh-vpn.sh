@@ -273,13 +273,15 @@ netfilter-persistent reload
 # download script
 cd /usr/bin
 # menu
-wget -O menu "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/hidessh99/projek10/main/menu/menu.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-vless.sh"
 wget -O running "https://raw.githubusercontent.com/bracoli/v4/main/menu/running.sh"
 wget -O clearcache "https://raw.githubusercontent.com/bracoli/v4/main/menu/clearcache.sh"
 wget -O menu-trgo "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-trgo.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-trojan.sh"
+wget -O menu-shadowsokcs "https://raw.githubusercontent.com/hidessh99/projek10/main/menu/menu-shadowsokcs.sh"
+
 
 # menu ssh ovpn
 wget -O menu-ssh "https://raw.githubusercontent.com/bracoli/v4/main/menu/menu-ssh.sh"
@@ -324,6 +326,7 @@ chmod +x running
 chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
+chmod +x menu-shadowsokcs
 
 chmod +x menu-ssh
 chmod +x usernew
