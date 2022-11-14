@@ -98,3 +98,4 @@ case $opt in
 7) clear ; clearcache ;;
 8) clear ; menu-shadowsokcs ;;
 x) exit ;;
+esac
