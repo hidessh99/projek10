@@ -20,7 +20,7 @@ commonname=none
 email=admin@hidessh.com
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/bracoli/v4/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+wget -O /etc/pam.d/common-password "https://gitlab.com/hidessh/baru/-/raw/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root
