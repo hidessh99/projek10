@@ -6,9 +6,9 @@ sleep 5
 clear
 #echo -n /var/log/xray/access.log
 echo -n > /tmp/other.txt
-data=( `cat /etc/xray/config.json| grep '^####' | cut -d ' ' -f 2 | sort | uniq`);
+data=( `cat /etc/xray/config.json| grep '^###' | cut -d ' ' -f 2 | sort | uniq`);
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\\E[0;41;36m         Trojan User Login          \E[0m"
+echo -e "\\E[0;41;36m         All Xray User Login          \E[0m"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 for akun in "${data[@]}"
 do
