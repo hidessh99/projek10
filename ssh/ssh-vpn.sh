@@ -447,7 +447,6 @@ chmod +x userdelexpired
 
 
 cd
-echo "0 17 * * * root clear-log" >> /etc/crontab
 echo "50 * * * * root userdelexpired" >> /etc/crontab
 # finihsing
 clear
